@@ -304,7 +304,7 @@ def create_meetup():
                 meetup = models.Meetup(start=form['start'].value,
                         end=form['end'].value, location=form['location'].value,
                         address=form['address'].value,
-                        meetupcom_id=form['meetupcom_id'].value,
+                        meetupcom_eventid=form['meetupcom_eventid'].value,
                         notes=form['notes'].value)
                 db.session.add(meetup)
                 db.session.commit()
